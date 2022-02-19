@@ -15,7 +15,7 @@ namespace MissionSystem.Data
         //Watch on using targets to make an unique ID, in case of mission change
         public virtual string MissionId => missionId;
         public int MissionTarget => missionTarget;
-        public virtual string MissionDescription => Translate.GetText(missionDescriptionKey);
+        public virtual string MissionDescription => missionDescriptionKey;
 
         public abstract MissionPrize MissionPrize { get; }
         public int PrizeValue => MissionPrize.PrizeAmount;

@@ -9,7 +9,7 @@ namespace MissionSystem.MissionTypes
     {
         [Header("Something target:")]
         [SerializeField] private Something targetSomething;
-        [SerializeField] private MissionCurrencyPrize currencyPrize;
+        [SerializeField] private MissionMoneyPrize currencyPrize;
 
         public override MissionPrize MissionPrize => currencyPrize;
         

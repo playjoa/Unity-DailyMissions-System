@@ -11,12 +11,14 @@ namespace MissionSystem.Components
         private static void SubscribeToGameEvents()
         {
             //Subscribe To Your GameEvents Here
-            MyGameManager.OnSomething += HandleOnSomethingEvent;
+            //MyGameManager.OnSomething += HandleOnSomethingEvent;
         }
 
+        /*
         private static void HandleOnSomethingEvent(Something something)
         {
             MissionValidator.MissionValidation<SomethingMission>(objectsToValidate: something);
         }
+        */
     }
 }
