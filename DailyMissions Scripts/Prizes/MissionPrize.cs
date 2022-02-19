@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace MissionSystem.Prizes
 {
+    //Create your custom prizes from this class
     [Serializable]
     public abstract class MissionPrize
     {

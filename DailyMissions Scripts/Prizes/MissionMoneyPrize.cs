@@ -6,14 +6,10 @@ namespace MissionSystem.Prizes
     [Serializable]
     public class MissionMoneyPrize : MissionPrize
     {
-        [Header("Money Config:")] 
-        [SerializeField] private int moneyAmount = 50;
-
-
+        //Add your money amount here
         public override void AwardPlayer() 
         {
-            //Add your money amount here
-            //EconomyController.AddMoney(moneyAmount);    
+            //EconomyController.AddMoney(PrizeAmount);    
         } 
     }
 }
