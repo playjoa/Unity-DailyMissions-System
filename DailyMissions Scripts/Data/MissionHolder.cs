@@ -26,7 +26,7 @@ namespace MissionSystem.Data
         
         public void Collect()
         {
-            if(Collected) return;
+            if (Collected) return;
             
             MissionData.Collect();
             MissionItem.AwardPlayer();

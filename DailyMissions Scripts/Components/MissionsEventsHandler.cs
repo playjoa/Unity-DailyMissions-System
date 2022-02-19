@@ -10,14 +10,13 @@ namespace MissionSystem.Components
 
         private static void SubscribeToGameEvents()
         {
-            GarbageCollectController.OnGarbageCollect += HandleGarbageCollectMissions;
+            //Subscribe To Your GameEvents Here
+            MyGameManager.OnSomething += HandleOnSomethingEvent;
         }
 
-        private static void HandleGarbageCollectMissions(Garbage garbageCollected)
+        private static void HandleOnSomethingEvent(Something something)
         {
-            MissionValidator.MissionValidation<GarbageCollectMission>(objectsToValidate: garbageCollected);
-            MissionValidator.MissionValidation<GarbageRarityCollectMission>(objectsToValidate: garbageCollected.GarbageStats.Rarity);
-            MissionValidator.MissionValidation<GarbageLocationCollectMission>(objectsToValidate: garbageCollected.Location);
+            MissionValidator.MissionValidation<SomethingMission>(objectsToValidate: something);
         }
     }
 }
