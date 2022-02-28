@@ -14,7 +14,7 @@ namespace MissionSystem.Controller
         public static int CurrentMissionsCount => CurrentMissions.Count;
         public static bool HasNewMissions { get; private set; }
         public static bool CanCollectAny => CurrentMissions.Any(mission => mission.Complete && !mission.Collected);
-        public static bool AtMaxMission => CurrentMissions.Count < MaxMissions;
+        public static bool AtMaxMissions => CurrentMissions.Count == MaxMissions;
 
         public static bool CanRequestMissions => CurrentMissions.All(mission => mission.Collected) || !CurrentMissions.Any();
 
